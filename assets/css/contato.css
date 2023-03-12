@@ -1,0 +1,68 @@
+form {
+    width: 400px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 15px;
+    background-color: #222831;
+}
+
+form fieldset {
+    border: 0;
+}
+
+form fieldset label {
+    display: block;
+}
+
+form fieldset input, textarea {
+    width: 100%;
+    cursor: pointer;
+}
+
+table {
+    border: 2px solid #222831 ;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  th, td {
+    border: 1px solid #222831;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  thead {
+    border: 1px solid #222831;
+    background-color: #EEEEEE;
+    color: #222831;
+  }
+  
+  td {
+    border: 1px solid #222831;
+    background-color:#EEEEEE;
+    color: #222831;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #00ADB5;
+  }
+
+@media (max-width: 750px) {
+    .container {
+      grid-template-areas: 
+          "header"
+          "nav"
+          "section"
+          "footer"
+      ;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    form { 
+        width: 80%;
+    }
+}
